@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162_SAP" APIVersion="3.6.13324.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2024-07-29T12:05:42Z" uuid="ee2ada78-d93c-4c90-98c2-e18bd1b57593">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="tr_TR" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="137.3mm" w="76mm" x="2mm" y="6.35mm"/>
+            <medium long="150mm" short="80mm" stock="custom"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="132.52mm" w="75.999mm">
+         <subform layout="tb" name="Content" w="75.999mm">
+            <bind match="none"/>
+            <subform layout="lr-tb" name="Baslik" w="75.999mm">
+               <bind match="none"/>
+               <field h="5mm" name="IV_VBELN" w="42.45mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="5pt" typeface="Calibri"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="14.11mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="1DB53E73-A3EF-4F65-8C6D-F840309EDB96">Sipariş Numarası :</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.IV_VBELN"/>
+                  <desc>
+                     <text name="Schema Annotation">SD belgesi numarası</text>
+                  </desc>
+               </field>
+               <field h="5mm" name="DATE" w="15.875mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font size="5pt" typeface="Calibri"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption reserve="2.205mm">
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="5EC7E5E3-39AC-4ECA-ADEF-4B877D326ACF"/>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.SFPSY.DATE">
+                     <picture>date{YYYY-MM-DD}</picture>
+                  </bind>
+                  <desc>
+                     <text name="Schema Annotation">Sistem tarihi</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+               </field>
+               <field h="5mm" name="TIME" w="15.875mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font size="5pt" typeface="Calibri"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <time/>
+                  </value>
+                  <caption reserve="1.85mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="BD7834B5-25BA-4C24-87A5-A01793698A68"/>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.SFPSY.TIME">
+                     <picture>time{KK:MM:SS}</picture>
+                  </bind>
+                  <desc>
+                     <text name="Schema Annotation">Sistem saati</text>
+                  </desc>
+                  <validate nullTest="error"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="lr-tb" name="MusteriTarihSaat" w="88.9mm">
+               <bind match="none"/>
+               <subform layout="tb" name="MüsteriBilgileri" w="45.625mm">
+                  <bind match="none"/>
+                  <?templateDesigner expand 0?>
+                  <draw h="4mm" name="MüsteriBilgileriText" w="29.2864mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="BCD3CA8C-23F2-4472-9230-0B604C5A08AB">Müşteri Bilgileri</text>
+                     </value>
+                     <font size="5pt" typeface="Calibri" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  </draw>
+                  <field h="5mm" name="MUSTERI_ADI" w="40mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="11.11mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="F3985819-D6C7-4768-80A1-71CB2819C0DE">Müşteri Adı</text>
+                        </value>
+                     </caption>
+                     <value>
+                        <text maxChars="70"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_MUSTERI.MUSTERI_ADI"/>
+                     <desc>
+                        <text name="Schema Annotation">Müşteri adı</text>
+                     </desc>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <field h="5mm" name="MUSTERI_NO" w="40mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="11.11mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="C1F3026B-7FD9-44EA-B802-A3F2430B023F">Müşteri No</text>
+                        </value>
+                     </caption>
+                     <value>
+                        <text maxChars="10"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_MUSTERI.MUSTERI_NO"/>
+                     <desc>
+                        <text name="Schema Annotation">Müşteri numarası</text>
+                     </desc>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <field h="7mm" name="ADRES" w="40mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="11.11mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="B7E9381F-5216-4DAC-9A0A-D85DDE281860">Adres</text>
+                        </value>
+                     </caption>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_MUSTERI.ADRES"/>
+                     <desc>
+                        <text name="Schema Annotation">Text, 255 Characters</text>
+                     </desc>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <field h="5mm" name="EMAIL" w="40mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="11.11mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="31418EB9-BC39-4658-ADE9-7EB5C1B8987E">E-posta</text>
+                        </value>
+                     </caption>
+                     <value>
+                        <text maxChars="241"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_MUSTERI.EMAIL"/>
+                     <desc>
+                        <text name="Schema Annotation">E-posta adresi</text>
+                     </desc>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <field h="5mm" name="TELEFON_NO" w="40mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="11.11mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="F33A4F21-03A4-4493-902B-AD1654EA17FF">Telefon No</text>
+                        </value>
+                     </caption>
+                     <value>
+                        <text maxChars="30"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_MUSTERI.TELEFON_NO"/>
+                     <desc>
+                        <text name="Schema Annotation">İlk telefon no.: Kod+telefon no.</text>
+                     </desc>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+               </subform>
+               <?templateDesigner expand 0?>
+               <subform h="36.52mm" name="DateTime" w="28.575mm">
+                  <bind match="none"/>
+                  <draw h="6.35mm" hAlign="right" name="KoleksiyonLogo" w="28.575mm" y="4.525mm">
+                     <value>
+                        <image contentType="image/png">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
+QmCC</image>
+                     </value>
+                     <ui>
+                        <imageEdit/>
+                     </ui>
+                     <desc>
+                        <text name="embeddedHref">C:\Users\g_pol\OneDrive\Masaüstü\images.png</text>
+                     </desc>
+                  </draw>
+                  <?templateDesigner expand 1?></subform>
+            </subform>
+            <subform h="8mm" name="space1" w="88.9mm">
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="tb" name="Malzemeler" w="89.089mm">
+               <bind match="none"/>
+               <draw h="4mm" name="MalzemeText" w="29.2864mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="72459AB7-138D-48D1-ADA6-68C82A0B2C28">Ürün Bilgileri</text>
+                  </value>
+                  <font size="5pt" typeface="Calibri" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               </draw>
+               <subform columnWidths="5.5mm 22mm 10.18mm 5.82mm 7mm 8mm 8mm 8mm" layout="table" name="GT_MALZEME">
+                  <subform id="overflowLeader1_ID" layout="row" name="overflowLeader1">
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="4EEE2164-F601-4ED9-8186-9DCA8B2F7731">Kalem</text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="954853DB-416E-48E7-82FD-CC86D1CFA62B">Ürün Adı</text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="325F498F-46FA-4378-9FB4-3C2797CDBC48">Ürün No</text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="E2DCC442-8885-4E1E-B58A-697A5869D8AC">Miktar</text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="E9C6C662-2B02-46EB-9C83-7B2D87AE0D18">İskonto % </text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="3BC03747-BF63-4BB9-ABC4-6F198F1F6D35">Net</text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="E34AB6E1-7E97-478D-B8F4-B9133D584559">Kdv</text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <draw>
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="357BB4DD-1F7D-4604-939A-1ACD05D62BE1">Toplam Tutar</text>
+                        </value>
+                        <font size="5pt" typeface="Calibri" weight="bold"/>
+                        <para vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </draw>
+                     <assist role="TH"/>
+                     <occur max="-1"/>
+                     <bind match="none"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="row" name="DATA">
+                     <field h="5mm" name="KALEM" w="62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="2"/>
+                        </value>
+                        <bind match="dataRef" ref="$.KALEM"/>
+                        <desc>
+                           <text name="Schema Annotation">Versiyon numarası bileşenleri</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                        </border>
+                     </field>
+                     <field h="5mm" name="MALZEME_ADI" w="62mm" x="113mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="100"/>
+                        </value>
+                        <bind match="dataRef" ref="$.MALZEME_ADI"/>
+                        <desc>
+                           <text name="Schema Annotation">100 karakter</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                        </border>
+                     </field>
+                     <field h="5mm" name="MALZEME_NO" w="62mm" y="9mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="18"/>
+                        </value>
+                        <bind match="dataRef" ref="$.MALZEME_NO"/>
+                        <desc>
+                           <text name="Schema Annotation">Malzeme numarası</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                        </border>
+                     </field>
+                     <field h="5mm" name="MIKTAR" w="62mm" x="62mm" y="9mm">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <decimal fracDigits="3" leadDigits="10"/>
+                        </value>
+                        <bind match="dataRef" ref="$.MIKTAR"/>
+                        <desc>
+                           <text name="Schema Annotation">Miktar</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </field>
+                     <field h="5mm" name="ISKONTO_YUZDE" w="62mm" y="18mm">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <decimal leadDigits="9"/>
+                        </value>
+                        <bind match="dataRef" ref="$.ISKONTO_YUZDE"/>
+                        <desc>
+                           <text name="Schema Annotation">Koşul tutarı veya yüzde oranı</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge/>
+                        </border>
+                     </field>
+                     <field h="5mm" name="NET_TUTAR" w="62mm" x="62mm" y="27mm">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <decimal fracDigits="-1"/>
+                        </value>
+                        <bind match="dataRef" ref="$.NET_TUTAR"/>
+                        <desc>
+                           <text name="Schema Annotation">Belge para birimi cinsinden net değer</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <format>
+                           <picture>num{z,zzz,zz9.888}</picture>
+                        </format>
+                     </field>
+                     <field h="5mm" name="KDV" w="62mm" x="75.999mm" y="27mm">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <decimal fracDigits="-1"/>
+                        </value>
+                        <bind match="dataRef" ref="$.KDV"/>
+                        <desc>
+                           <text name="Schema Annotation">Belge para birimi cinsinden vergi tutarı</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <format>
+                           <picture>num{z,zzz,zz9.888}</picture>
+                        </format>
+                     </field>
+                     <field h="5mm" name="TOPLAM_TUTAR" w="62mm" y="36mm">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="5pt" typeface="Calibri"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <decimal fracDigits="-1"/>
+                        </value>
+                        <bind match="dataRef" ref="$.TOPLAM_TUTAR"/>
+                        <desc>
+                           <text name="Schema Annotation">Belge para birimi cinsinden net değer</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <format>
+                           <picture>num{z,zzz,zz9.888}</picture>
+                        </format>
+                     </field>
+                     <assist role="TR"/>
+                     <occur max="-1"/>
+                     <bind match="dataRef" ref="$.DATA[*]"/>
+                     <?templateDesigner expand 1?></subform>
+                  <occur min="0"/>
+                  <bind match="dataRef" ref="$.GT_MALZEME"/>
+                  <desc>
+                     <text name="Schema Annotation">Sipariş ve Teklif PDF iç yapı hesaplamaları için Table Type</text>
+                  </desc>
+                  <keep intact="contentArea"/>
+                  <overflow leader="overflowLeader1"/>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 1?></subform>
+            <subform h="37.849mm" name="space2" w="88.9mm">
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="lr-tb" name="MagazaToplam" w="88.9mm">
+               <bind match="none"/>
+               <subform layout="tb" name="Magaza" w="42.45mm">
+                  <bind match="none"/>
+                  <draw h="4mm" name="MagazaText" w="38.1mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="06FE13CE-421D-4B19-9E4E-D6EF03A8F38B">Mağaza Bilgileri</text>
+                     </value>
+                     <font size="5pt" typeface="Calibri" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  </draw>
+                  <field h="5mm" name="BOLGE_ADI" w="34.89mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="12mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="CF8CFFE7-A6ED-4CED-B32B-8A04F9523640">Mağaza</text>
+                        </value>
+                     </caption>
+                     <value>
+                        <text maxChars="40"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_MUSTERI.BOLGE_ADI"/>
+                     <desc>
+                        <text name="Schema Annotation">Kasa Kodu Tanımı</text>
+                     </desc>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <field h="5mm" name="SATIS_SORUMLUSU_ADI" w="34.89mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="12mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="E455D265-F770-445A-8184-BC01D05AC9B3">Satış Sorumlusu</text>
+                        </value>
+                     </caption>
+                     <value>
+                        <text maxChars="50"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_MUSTERI.SATIS_SORUMLUSU_ADI"/>
+                     <desc>
+                        <text name="Schema Annotation">Satış Sorumlusu Adı</text>
+                     </desc>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="rl-tb" name="GenelToplam" w="32.375mm">
+                  <bind match="none"/>
+                  <draw h="4mm" name="GenelToplamText" w="15.875mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="C1118429-E13B-47B5-A03F-F3856AA04AB8">Genel Toplam</text>
+                     </value>
+                     <font size="5pt" typeface="Calibri" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right"/>
+                  </draw>
+                  <field h="5mm" hAlign="right" name="WAERK" w="29.2mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <caption reserve="12mm">
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="9743E977-5780-4C68-A808-D60CF7E9874E">Para Birimi</text>
+                        </value>
+                     </caption>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <desc>
+                        <text name="Schema Annotation">SD belgesi para birimi</text>
+                     </desc>
+                     <value>
+                        <text maxChars="5"/>
+                     </value>
+                     <bind match="dataRef" ref="$.IS_TUTAR.WAERK"/>
+                  </field>
+                  <field h="5mm" hAlign="right" name="GENEL_ISKONTO_YUZDE" w="29.2mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <decimal fracDigits="9" leadDigits="19"/>
+                     </value>
+                     <caption reserve="12mm">
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="32A75749-5855-473B-A32C-E4E9661B46AB">Genel İskonto %</text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$.IS_TUTAR.GENEL_ISKONTO_YUZDE"/>
+                     <desc>
+                        <text name="Schema Annotation">Koşul tutarı</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <field h="5mm" hAlign="right" name="NET_TUTAR" w="29.2mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <decimal fracDigits="-1"/>
+                     </value>
+                     <caption reserve="12mm">
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="39118D66-C254-43AD-BAF9-10FA062537E0">Net  </text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$.GS_TUTAR.TOPLAM_NET"/>
+                     <desc>
+                        <text name="Schema Annotation">Belge para birimi cinsinden net değer</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <format>
+                        <picture>num{z,zzz,zz9.888}</picture>
+                     </format>
+                  </field>
+                  <field h="5mm" hAlign="right" name="KDV" w="29.2mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <decimal fracDigits="-1"/>
+                     </value>
+                     <caption reserve="12mm">
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="45878661-4407-4699-B6E4-DCBB75B16274">Kdv</text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$.GS_TUTAR.TOPLAM_KDV"/>
+                     <desc>
+                        <text name="Schema Annotation">Belge para birimi cinsinden net değer</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <format>
+                        <picture>num{z,zzz,zz9.888}</picture>
+                     </format>
+                  </field>
+                  <field h="5mm" hAlign="right" name="TOTAL_INDIRIM_TUTAR" w="29.2mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <decimal fracDigits="-1"/>
+                     </value>
+                     <caption reserve="12mm">
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="6FA9D8B4-BDC5-45BE-982C-A5E0D42D3484">Toplam İndirim</text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$.GS_TUTAR.TOPLAM_INDIRIM"/>
+                     <desc>
+                        <text name="Schema Annotation">Belge para birimi cinsinden net değer</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <format>
+                        <picture>num{zzzz9.888}</picture>
+                     </format>
+                  </field>
+                  <field h="5mm" hAlign="right" name="TOPLAM_TUTAR" w="29.2mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font size="5pt" typeface="Calibri" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <decimal fracDigits="-1"/>
+                     </value>
+                     <caption reserve="12mm">
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="8BB5E318-7AEA-40D9-9A8C-E158336CE9EA">Toplam Tutar</text>
+                        </value>
+                     </caption>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.GS_TUTAR.TOPLAM_TUTAR"/>
+                     <desc>
+                        <text name="Schema Annotation">Belge para birimi cinsinden net değer</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <format>
+                        <picture>num{z,zzz,zz9.888}</picture>
+                     </format>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Calibri" 0 0 UTF-16 2 144 000300040011001C00270037003C004400450057005E00640102011A011E01280152015D0166016C016F01750176017D0189018C01900194019A01B501BA01C001CC035703720439?>
+      <?renderCache.subset "Calibri" 1 0 UTF-16 2 128 00030004001100270037003C004400450064006D0102011A011E01500152015D0166016C016F01750176017D0189018C01900194019A01B501BA01C001CC0439?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 200?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://kolerpt.koleksiyon.mobilya:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri" typeface="Calibri" weight="normal"/>
+      <font posture="normal" psName="Calibri-Bold" typeface="Calibri" weight="bold"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZSD_FIORI_KASA_SIPARIS_FR">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <IS_MUSTERI>
+            <SIPARIS_NO/>
+            <MUSTERI_NO/>
+            <MUSTERI_ADI/>
+            <SATIS_SORUMLUSU_ADI/>
+            <BOLGE_ADI/>
+            <ADRES/>
+            <EMAIL/>
+            <TELEFON_NO/>
+         </IS_MUSTERI>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+         <IV_VBELN/>
+         <GS_TUTAR>
+            <TOPLAM_NET/>
+            <TOPLAM_KDV/>
+            <TOPLAM_INDIRIM/>
+            <TOPLAM_TUTAR/>
+         </GS_TUTAR>
+         <GT_MALZEME dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <KALEM/>
+               <RESIM/>
+               <MALZEME_ADI/>
+               <MALZEME_NO/>
+               <MIKTAR/>
+               <OLCU_BIRIMI/>
+               <ISKONTO_YUZDE/>
+               <ISKONTO_TUTAR/>
+               <PARA_BIRIMI/>
+               <VERGI_ID/>
+               <NET_TUTAR/>
+               <KDV/>
+               <TOPLAM_TUTAR/>
+               <MEINS/>
+               <WAERK/>
+            </DATA>
+         </GT_MALZEME>
+         <IS_TUTAR>
+            <GENEL_ISKONTO_YUZDE/>
+            <GENEL_ISKONTO_TUTAR/>
+            <NET_TUTAR/>
+            <KDV/>
+            <TOPLAM_TUTAR/>
+            <TOTAL_INDIRIM_TUTAR/>
+            <WAERK/>
+         </IS_TUTAR>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="Türkçe (Türkiye)" name="tr_TR">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>Ocak</month>
+            <month>Şubat</month>
+            <month>Mart</month>
+            <month>Nisan</month>
+            <month>Mayıs</month>
+            <month>Haziran</month>
+            <month>Temmuz</month>
+            <month>Ağustos</month>
+            <month>Eylül</month>
+            <month>Ekim</month>
+            <month>Kasım</month>
+            <month>Aralık</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Oca</month>
+            <month>Şub</month>
+            <month>Mar</month>
+            <month>Nis</month>
+            <month>May</month>
+            <month>Haz</month>
+            <month>Tem</month>
+            <month>Ağu</month>
+            <month>Eyl</month>
+            <month>Eki</month>
+            <month>Kas</month>
+            <month>Ara</month>
+         </monthNames>
+         <dayNames>
+            <day>Pazar</day>
+            <day>Pazartesi</day>
+            <day>Salı</day>
+            <day>Çarşamba</day>
+            <day>Perşembe</day>
+            <day>Cuma</day>
+            <day>Cumartesi</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Paz</day>
+            <day>Pzt</day>
+            <day>Sal</day>
+            <day>Çar</day>
+            <day>Per</day>
+            <day>Cum</day>
+            <day>Cmt</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">DD MMMM YYYY EEEE</datePattern>
+         <datePattern name="long">DD MMMM YYYY EEEE</datePattern>
+         <datePattern name="med">DD.MMM.YYYY</datePattern>
+         <datePattern name="short">DD.MM.YYYY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">HH:MM:SS Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GanjkHmsSEDFwWxhKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">z,zz9 $</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping">.</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">TL</currencySymbol>
+         <currencySymbol name="isoname">TRL</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2024-07-29T12:05:42Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:ee2ada78-d93c-4c90-98c2-e18bd1b57593</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

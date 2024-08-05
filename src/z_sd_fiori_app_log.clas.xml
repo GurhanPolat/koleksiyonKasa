@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>Z_SD_FIORI_APP_LOG</CLSNAME>
+    <LANGU>T</LANGU>
+    <DESCRIPT>Message Log Funktionalität</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_DYN_LOG</CMPNAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Create message log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_LOG</CMPNAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Create message log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_MESSAGE_HANDLE</CMPNAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Application Log: Log Handle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MC_SD_LOG_OBJECT</CMPNAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>SD Fiori LOG Objesi</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REFRESH_LOG</CMPNAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Refresh message log</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYN_LOG</CMPNAME>
+     <SCONAME>OBJECT</SCONAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Uygulama günlüğü: Nesne adı (uygulama kısaltması)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYN_LOG</CMPNAME>
+     <SCONAME>SUBOBJECT</SCONAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Uygulama günlüğü: Alt nesne</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYN_LOG</CMPNAME>
+     <SCONAME>S_LOG</SCONAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Uygulama günlüğü: İletinin verileri</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYN_LOG</CMPNAME>
+     <SCONAME>S_RETURN</SCONAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Dönüş parametresi</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYN_LOG</CMPNAME>
+     <SCONAME>T_RETURN</SCONAME>
+     <LANGU>T</LANGU>
+     <DESCRIPT>Hata iletileri</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

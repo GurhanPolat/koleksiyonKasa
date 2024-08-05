@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>T</LANGUAGE>
+     <ID/>
+     <TEXT>Fiori uygulamasi teklif formu arayüz</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GT_MALZEME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSD_MALZEME_PDF_DATA_TT_2</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ISKONTO_YUZDE_GIZLE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>FLAG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_TUTAR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>GTY_TUTAR</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES : BEGIN OF gty_tutar,</FPCLINE>
+      <FPCLINE>          toplam_net      TYPE netwr,</FPCLINE>
+      <FPCLINE>          toplam_kdv      TYPE netwr,</FPCLINE>
+      <FPCLINE>          toplam_indirim  TYPE netwr,</FPCLINE>
+      <FPCLINE>          toplam_tutar    TYPE netwr,</FPCLINE>
+      <FPCLINE>        END OF gty_tutar.</FPCLINE>
+      <FPCLINE/>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IS_MUSTERI</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSD_MUSTERI_PDF_DATA_ST</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IT_MALZEME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSD_MALZEME_PDF_DATA_TT</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IS_TUTAR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSD_GENEL_TUTAR_PDF_DATA_ST</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IV_TEKLIF_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>IS_TUTAR</FPPARAMETER>
+      <FPPARAMETER>IT_MALZEME</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>GV_ISKONTO_YUZDE_GIZLE</FPPARAMETER>
+      <FPPARAMETER>GS_TUTAR</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE/>
+      <FPCLINE>DATA: ls_pdf_malzeme TYPE zsd_malzeme_pdf_data_st_2.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: strlen TYPE i.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT it_malzeme INTO DATA(ls_malzeme).</FPCLINE>
+      <FPCLINE>  MOVE-CORRESPONDING ls_malzeme TO ls_pdf_malzeme.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  strlen = strlen( ls_malzeme-kalem ) - 2.</FPCLINE>
+      <FPCLINE>  ls_pdf_malzeme-kalem = ls_malzeme-kalem+strlen(2).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  APPEND ls_pdf_malzeme TO gt_malzeme.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CLEAR ls_malzeme.</FPCLINE>
+      <FPCLINE>LOOP AT it_malzeme INTO ls_malzeme.</FPCLINE>
+      <FPCLINE>  IF ls_malzeme-iskonto_yuzde EQ 0.</FPCLINE>
+      <FPCLINE>    gv_iskonto_yuzde_gizle = &apos;X&apos;.</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    gv_iskonto_yuzde_gizle = &apos;&apos;.</FPCLINE>
+      <FPCLINE>    EXIT.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>gs_tutar-toplam_net = |{ is_tutar-net_tutar DECIMALS = 2 }|.</FPCLINE>
+      <FPCLINE>gs_tutar-toplam_tutar = |{ is_tutar-toplam_tutar DECIMALS = 2 }|.</FPCLINE>
+      <FPCLINE>gs_tutar-toplam_kdv = |{ is_tutar-kdv DECIMALS = 2 }|.</FPCLINE>
+      <FPCLINE>gs_tutar-toplam_indirim = |{ is_tutar-total_indirim_tutar DECIMALS = 2 }|.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

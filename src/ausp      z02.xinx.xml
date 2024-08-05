@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_XINX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <XINX>
+    <DD12V>
+     <SQLTAB>AUSP</SQLTAB>
+     <INDEXNAME>Z02</INDEXNAME>
+     <AS4LOCAL>A</AS4LOCAL>
+     <DDLANGUAGE>T</DDLANGUAGE>
+     <DBINDEX>AUSP~Z02</DBINDEX>
+     <DDTEXT>MANDT-ATZHL-MAFID-KLART-ADZHL</DDTEXT>
+     <ISEXTIND>X</ISEXTIND>
+    </DD12V>
+    <T_DD17V>
+     <DD17V>
+      <SQLTAB>AUSP</SQLTAB>
+      <INDEXNAME>Z02</INDEXNAME>
+      <POSITION>0001</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>MANDT</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>AUSP</SQLTAB>
+      <INDEXNAME>Z02</INDEXNAME>
+      <POSITION>0002</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>ATZHL</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>AUSP</SQLTAB>
+      <INDEXNAME>Z02</INDEXNAME>
+      <POSITION>0003</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>MAFID</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>AUSP</SQLTAB>
+      <INDEXNAME>Z02</INDEXNAME>
+      <POSITION>0004</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>KLART</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>AUSP</SQLTAB>
+      <INDEXNAME>Z02</INDEXNAME>
+      <POSITION>0005</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>ADZHL</FIELDNAME>
+     </DD17V>
+    </T_DD17V>
+   </XINX>
+  </asx:values>
+ </asx:abap>
+</abapGit>

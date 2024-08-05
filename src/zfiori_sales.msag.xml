@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZFIORI_SALES</ARBGB>
+    <MASTERLANG>T</MASTERLANG>
+    <STEXT>SD Fiori Mesaj sinifi</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZFIORI_SALES</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZFIORI_SALES</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>&amp; numaralı sipariş için &apos;bilgi fişi&apos; oluşturulamadı.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZFIORI_SALES</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>&amp; numaralı müşteri bulunamadı.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZFIORI_SALES</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>&amp; numaralı personel sisteme giriş yapamadı.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZFIORI_SALES</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>&amp; numaralı personel sisteme giriş yaptı.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZFIORI_SALES</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>&amp; numarali ürün güncel fiyati bulunmamaktadir.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

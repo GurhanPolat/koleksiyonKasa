@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_XINX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <XINX>
+    <DD12V>
+     <SQLTAB>DRAW</SQLTAB>
+     <INDEXNAME>Z01</INDEXNAME>
+     <AS4LOCAL>A</AS4LOCAL>
+     <DDLANGUAGE>T</DDLANGUAGE>
+     <DBINDEX>DRAW~Z01</DBINDEX>
+     <DDTEXT>MANDT-DOKAR-DOKVR-DOKTL</DDTEXT>
+     <ISEXTIND>X</ISEXTIND>
+    </DD12V>
+    <T_DD17V>
+     <DD17V>
+      <SQLTAB>DRAW</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0001</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>MANDT</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>DRAW</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0002</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>DOKAR</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>DRAW</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0003</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>DOKVR</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>DRAW</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0004</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>DOKTL</FIELDNAME>
+     </DD17V>
+    </T_DD17V>
+   </XINX>
+  </asx:values>
+ </asx:abap>
+</abapGit>
